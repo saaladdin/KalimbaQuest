@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 public partial class Kalimba : Control
 {
 	private Dictionary<string, AudioStream> sounds = new();
-	
-	private Sprite2D Sarah;
-	private Texture2D SarahSad;
-	private Texture2D sadFace;
-
 	private List<string> tutorialNotes = new() { "C4", "E4", "G4", "C5" };
 	private int currentNoteIndex = 0;
 	private bool isPlayerTurn = false;
+
+	// Cat face sprites
+	private Sprite2D Sarah_Normal;
+	private Sprite2D Sarah_Talk;
+	private Sprite2D Sarah_Sad;
 
 	public override async void _Ready()
 	{
@@ -49,6 +49,16 @@ public partial class Kalimba : Control
 			}
 		}
 
+		// Initialize cat face sprites
+		Sarah_Normal = GetNode<Sprite2D>("Sarah_Normal");
+		Sarah_Talk = GetNode<Sprite2D>("Sarah_Talk");
+		Sarah_Sad = GetNode<Sprite2D>("Sarah_Sad");
+
+		// Initially show the normal face
+		Sarah_Normal.Visible = true;
+		Sarah_Talk.Visible = false;
+		Sarah_Sad.Visible = false;
+
 		// Play tutorial notes
 		await PlayTutorial();
 		isPlayerTurn = true;
@@ -64,7 +74,7 @@ public partial class Kalimba : Control
 			await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
 		}
 	}
-	
+
 	private async Task HighlightAndPlay(string note)
 	{
 		// Play the sound
@@ -83,7 +93,6 @@ public partial class Kalimba : Control
 			keyButton.Modulate = originalColor;
 		}
 	}
-
 
 	private void PlayNote(string note)
 	{
@@ -117,13 +126,32 @@ public partial class Kalimba : Control
 			{
 				GD.Print("🎉 You played it perfectly!");
 				isPlayerTurn = false;
-				// Optionally: advance to next level or restart tutorial
 			}
 		}
 		else
 		{
 			GD.Print($"❌ {note} was wrong! Starting over.");
+
+			// Show the sad face when the wrong note is played
+			ShowSadFace();
+
+			// Reset tutorial
 			currentNoteIndex = 0;
 		}
+	}
+
+	private async void ShowSadFace()
+	{
+		// Show the sad face
+		Sarah_Normal.Visible = false;
+		Sarah_Talk.Visible = false;
+		Sarah_Sad.Visible = true;
+
+		// Wait for a short time (e.g., 1 second)
+		await ToSignal(GetTree().CreateTimer(1.0f), "timeout");
+
+		// After the delay, show the normal face again
+		Sarah_Sad.Visible = false;
+		Sarah_Normal.Visible = true;
 	}
 }
