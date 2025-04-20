@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 public partial class Kalimba : Control
 {
 	private Dictionary<string, AudioStream> sounds = new();
-	private List<string> tutorialNotes = new() { "G5", "C5"};
+	private List<string> tutorialNotes = new() { "G4", "C5", "D5", "E5", "E5"};
 	private int currentNoteIndex = 0;
 	private bool isPlayerTurn = false;
 
