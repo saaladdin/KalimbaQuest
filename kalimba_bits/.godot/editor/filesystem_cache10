@@ -1,42 +1,40 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< HEAD
-::res://::1745164835
+::res://::1745166857
 background.png::CompressedTexture2D/CompressedTexture2D::1589449674321095382::1745090085::1745131042::1::::<><><>0<>0<>b80eb888c671e2a073da23363d14c991<>res://.godot/imported/background.png-98289422cd7d93003950872a7b97021f.ctex::
 BOWIE-Sheet.png::CompressedTexture2D/CompressedTexture2D::849303387182470742::1745163227::1745163246::1::::<><><>0<>0<>098ac872c6211f9f2f8e2f3b58800a24<>res://.godot/imported/BOWIE-Sheet.png-351c6b4f7b65ba8dda290aeb10efa6f5.ctex::
 BOWIE.json::JSON/JSON::-1::1745163227::0::1::::<><><>0<>0<><>::
 bowie.png::CompressedTexture2D/CompressedTexture2D::5769156931146152382::1745098447::1745131043::1::::<><><>0<>0<>9fcf8c1954e1b0827d2d2bc953e60e14<>res://.godot/imported/bowie.png-b9cbd08646eccde60fad9b7e3bcc9f75.ctex::
-bowierun.tscn::PackedScene::6429958998362925054::1745163246::0::1::::<><><>0<>0<><>::uid://dug5yun0bxd8g::::res://kalimba sheet.png
+bowierun.tscn::PackedScene/PackedScene::6429958998362925054::1745166382::0::1::::<><><>0<>0<><>::uid://dug5yun0bxd8g::::res://kalimba sheet.png
 bowie_mouth.png::CompressedTexture2D/CompressedTexture2D::3161550194551910371::1745098447::1745131043::1::::<><><>0<>0<>68195dab602141b1e86b2ad81f313959<>res://.godot/imported/bowie_mouth.png-5e94af197bf9abce027f18066d8be3f5.ctex::
 DialogueScene2.cs::CSharpScript::1934425395415644408::1745162694::0::1::::<>Control<><>0<>0<><>::
-DialogueScene2.tscn::PackedScene::3998368834054207541::1745164683::0::1::::<><><>0<>0<><>::uid://wv7aer4f57bu::::res://background.png<>uid://2tbx6n3w4ku7::::res://DialogueScene2.cs<>uid://cvxvtdqwq0rpr::::res://sarah.png<>uid://dpxohls8fv3ho::::res://sarah_mouth.png<>uid://cogvf3tktro7o::::res://bowie.png<>uid://blbqjf5cd6d04::::res://bowie_mouth.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf
+DialogueScene2.tscn::PackedScene::3998368834054207541::1745166293::0::1::::<><><>0<>0<><>::uid://wv7aer4f57bu::::res://background.png<>uid://2tbx6n3w4ku7::::res://DialogueScene2.cs<>uid://cvxvtdqwq0rpr::::res://sarah.png<>uid://dpxohls8fv3ho::::res://sarah_mouth.png<>uid://cogvf3tktro7o::::res://bowie.png<>uid://blbqjf5cd6d04::::res://bowie_mouth.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf
 DialogueScene.cs::CSharpScript::7204411056803768632::1745160596::0::1::::<>Control<><>0<>0<><>::
-DialogueScene.tscn::PackedScene::6834532665808956926::1745164683::0::1::::<><><>0<>0<><>::uid://dav4uk0ic3ofw::::res://DialogueScene.cs<>uid://wv7aer4f57bu::::res://background.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf<>uid://cvxvtdqwq0rpr::::res://sarah.png<>uid://dpxohls8fv3ho::::res://sarah_mouth.png<>uid://cogvf3tktro7o::::res://bowie.png<>uid://blbqjf5cd6d04::::res://bowie_mouth.png
+DialogueScene.tscn::PackedScene::6834532665808956926::1745166293::0::1::::<><><>0<>0<><>::uid://dav4uk0ic3ofw::::res://DialogueScene.cs<>uid://wv7aer4f57bu::::res://background.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf<>uid://cvxvtdqwq0rpr::::res://sarah.png<>uid://dpxohls8fv3ho::::res://sarah_mouth.png<>uid://cogvf3tktro7o::::res://bowie.png<>uid://blbqjf5cd6d04::::res://bowie_mouth.png
 icon.svg::CompressedTexture2D/CompressedTexture2D::4007016512454481131::1745087751::1745131042::1::::<><><>0<>0<>0d43a11d12c253745b9d47c31147f375<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 IntroScene.cs::CSharpScript::8607855382177194488::1745149246::0::1::::<>Control<><>0<>0<><>::
-IntroScene.tscn::PackedScene::4812019050439632097::1745164683::0::1::::<><><>0<>0<><>::uid://duvyedk7u6ajo::::res://IntroScene.cs<>uid://dnacs08f3o1uw::::res://intro_pic.png<>uid://pvagt4levjo4::::res://intro_pic2.png<>uid://t4jc824jpbna::::res://kalimba_sounds/MC_Music.mp3
+IntroScene.tscn::PackedScene::4812019050439632097::1745166293::0::1::::<><><>0<>0<><>::uid://duvyedk7u6ajo::::res://IntroScene.cs<>uid://dnacs08f3o1uw::::res://intro_pic.png<>uid://pvagt4levjo4::::res://intro_pic2.png<>uid://t4jc824jpbna::::res://kalimba_sounds/MC_Music.mp3
 intro_pic2.png::CompressedTexture2D/CompressedTexture2D::1096196345418122533::1745131830::1745131831::1::::<><><>0<>0<>a8101c5c4b231fe5e3d043929bc6794c<>res://.godot/imported/intro_pic2.png-3109a0d9979974e1fd2cef9c5a023044.ctex::
 intro_pic.png::CompressedTexture2D/CompressedTexture2D::8071871960977020086::1745117406::1745131042::1::::<><><>0<>0<>f51193931b22179a10b4818a5e0fadb8<>res://.godot/imported/intro_pic.png-7a26715012f6a61191ed9b46e3f3d475.ctex::
 kalimba sheet.json::JSON/JSON::-1::1745163227::0::1::::<><><>0<>0<><>::
 kalimba sheet.png::CompressedTexture2D/CompressedTexture2D::8577290630888611740::1745163227::1745163246::1::::<><><>0<>0<>5aa126337cbe61c351e32465e6cd2317<>res://.godot/imported/kalimba sheet.png-e13a997d550bb610e8233dc6662d63a2.ctex::
-Kalimba.cs::CSharpScript::5841640045242020075::1745162820::0::1::::<>Control<><>0<>0<><>::
-Kalimba.tscn::PackedScene::3059202821827345432::1745164683::0::1::::<><><>0<>0<><>::uid://cphy7tsatbabr::::res://Kalimba.cs<>uid://befeanqn58oak::::res://PIXEL SARAH HEAD.png<>uid://qyqi7avjsfii::::res://kalimba_faces/sarahface.png<>uid://b3x4cf2gmeu42::::res://kalimba_faces/sarahface_sad.png<>uid://iie2bv7f4n86::::res://kalimba_faces/sarahface_mouth.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf
+Kalimba.cs::CSharpScript::5841640045242020075::1745166382::0::1::::<>Control<><>0<>0<><>::
+Kalimba.tscn::PackedScene::3059202821827345432::1745166293::0::1::::<><><>0<>0<><>::uid://cphy7tsatbabr::::res://Kalimba.cs<>uid://befeanqn58oak::::res://PIXEL SARAH HEAD.png<>uid://qyqi7avjsfii::::res://kalimba_faces/sarahface.png<>uid://b3x4cf2gmeu42::::res://kalimba_faces/sarahface_sad.png<>uid://iie2bv7f4n86::::res://kalimba_faces/sarahface_mouth.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf
 kalimba_key.png::CompressedTexture2D/CompressedTexture2D::2005080915770948947::1745125685::1745131042::1::::<><><>0<>0<>8693559ac325fece7facdbe696706fbb<>res://.godot/imported/kalimba_key.png-05f8175d6bf23fdded713383433173b6.ctex::
 KeysContainer.cs::CSharpScript/CSharpScript::584990599424122536::1745119634::0::1::::<><><>0<>0<><>::
-level_1.tscn::PackedScene::6400969151543454755::1745153536::0::1::::<><><>0<>0<><>::
+level_1.tscn::PackedScene/PackedScene::6400969151543454755::1745153536::0::1::::<><><>0<>0<><>::
 Minecraft.ttf::FontFile/FontFile::5448879688491930924::1745091143::1745131042::1::::<><><>0<>0<>7b2abe1098888d3f6afae96ba9c75cb6<>res://.godot/imported/Minecraft.ttf-b4cc597ac42d1410cc55dc192f0c0e34.fontdata::
-Opion.png::CompressedTexture2D::7070723675406366235::1745163849::1745163850::1::::<><><>0<>0<>1d8308bf15fb9988405688787459d676<>res://.godot/imported/Opion.png-e2d2627e10d36eb29745005e2bf978c1.ctex::
-Option.png::CompressedTexture2D::6296898015740601240::1745164835::1745164836::1::::<><><>0<>0<>eafb2abd973aed12b97722e259131fbe<>res://.godot/imported/Option.png-ab4254ac66f8c87d4a66391d9fd2f443.ctex::
+Option.png::CompressedTexture2D/CompressedTexture2D::6296898015740601240::1745164835::1745164836::1::::<><><>0<>0<>eafb2abd973aed12b97722e259131fbe<>res://.godot/imported/Option.png-ab4254ac66f8c87d4a66391d9fd2f443.ctex::
 PIXEL SARAH HEAD.png::CompressedTexture2D/CompressedTexture2D::2677741523139081674::1745129245::1745131042::1::::<><><>0<>0<>025446bfd211a8be40fb383820d8c5e1<>res://.godot/imported/PIXEL SARAH HEAD.png-649ebc71c9b29cf9c301b79f0fdcd4b3.ctex::
 sarah.png::CompressedTexture2D/CompressedTexture2D::6295596942369430363::1745099038::1745131042::1::::<><><>0<>0<>601db99b8bf08111662a859acd94029b<>res://.godot/imported/sarah.png-4dc6ccb4bfe9adbcd8769b7ef1809bff.ctex::
 sarah_mouth.png::CompressedTexture2D/CompressedTexture2D::8260438539519468292::1745090085::1745131042::1::::<><><>0<>0<>379f0498d2a3da4983673c88c614b5ee<>res://.godot/imported/sarah_mouth.png-9e095189890f012e5c320ac1f2c2a997.ctex::
 start1.png::CompressedTexture2D/CompressedTexture2D::982814859475369830::1745162651::1745162652::1::::<><><>0<>0<>9a2c19a46ae83fba474fc14b1a33087e<>res://.godot/imported/start1.png-aef2bb242625a25fa626315fbbffc63c.ctex::
 start2.png::CompressedTexture2D/CompressedTexture2D::5319767008694100350::1745162651::1745162652::1::::<><><>0<>0<>d616b0da675b6a102b2c016dd8aae448<>res://.godot/imported/start2.png-4996fe18b1f1831fcb6205977993f87a.ctex::
-Start.png::CompressedTexture2D::3444268888766312466::1745164835::1745164836::1::::<><><>0<>0<>d27aa928ede104a8d427a9527a8a629f<>res://.godot/imported/Start.png-bfb9d4ea70f8b857bf392b534b8809af.ctex::
-StartScene.cs::CSharpScript::6609664601307060912::1745164615::0::1::::<>Control<><>0<>0<><>::
-StartScene.tscn::PackedScene::4378792551268643693::1745164683::0::1::::<><><>0<>0<><>::uid://oac21vbvlu11::::res://start1.png<>uid://c1f1hfduynaea::::res://StartScene.cs<>uid://ch161x6tweiq5::::res://start2.png<>uid://t4jc824jpbna::::res://kalimba_sounds/MC_Music.mp3<>uid://bpcout3aowye1::::res://Start.png<>uid://c70d1yqs2pvc2::::res://Opion.png
-::res://kalimba sprites/::1745163246
+Start.png::CompressedTexture2D/CompressedTexture2D::3444268888766312466::1745164835::1745164836::1::::<><><>0<>0<>d27aa928ede104a8d427a9527a8a629f<>res://.godot/imported/Start.png-bfb9d4ea70f8b857bf392b534b8809af.ctex::
+StartScene.cs::CSharpScript::6609664601307060912::1745166285::0::1::::<>Control<><>0<>0<><>::
+StartScene.tscn::PackedScene::4378792551268643693::1745166303::0::1::::<><><>0<>0<><>::uid://oac21vbvlu11::::res://start1.png<>uid://c1f1hfduynaea::::res://StartScene.cs<>uid://ch161x6tweiq5::::res://start2.png<>uid://t4jc824jpbna::::res://kalimba_sounds/MC_Music.mp3<>uid://bpcout3aowye1::::res://Start.png<>uid://cvyi8w2745caq::::res://Option.png
+::res://kalimba sprites/::1745166824
 kalimba sheet.json::JSON/JSON::-1::1745163227::0::1::::<><><>0<>0<><>::
-kalimba sheet.png::CompressedTexture2D/CompressedTexture2D::3169614707137117181::1745163227::1745163246::1::::<><><>0<>0<>13a381ee90f89638794800e3ed5e9ca8<>res://.godot/imported/kalimba sheet.png-f67e7540f95b380efa08195d0cc7eb87.ctex::
+kalimba sheet.png::CompressedTexture2D/CompressedTexture2D::3749790492419247311::1745163227::1745166824::1::::<><><>0<>0<>c7efe0f57f546a978e59eb186746abc4<>res://.godot/imported/kalimba sheet.png-f67e7540f95b380efa08195d0cc7eb87.ctex::
 ::res://kalimba_faces/::1745154881
 bowieface.png::CompressedTexture2D/CompressedTexture2D::2683846935667505918::1745102802::1745131043::1::::<><><>0<>0<>9afc7abc89c7305cfad011d58027f9d5<>res://.godot/imported/bowieface.png-b951776f0d34223c136574a80543df7c.ctex::
 bowieface_mouth.png::CompressedTexture2D/CompressedTexture2D::7414722856149323699::1745101550::1745131043::1::::<><><>0<>0<>32b84ca4355fea507f62b29ed8f61d18<>res://.godot/imported/bowieface_mouth.png-302e0fc680161e9deb5ce0c607008c7f.ctex::
@@ -64,66 +62,3 @@ F5.mp3::AudioStreamMP3/AudioStreamMP3::8090635718448776349::1745125685::17451310
 G4.mp3::AudioStreamMP3/AudioStreamMP3::331530917577894260::1745125685::1745131042::1::::<><><>0<>0<>2ec30a8232a82e44df047df82ec7d00b<>res://.godot/imported/G4.mp3-dd8dc58b3c0852269fa8e62f2fc62406.mp3str::
 G5.mp3::AudioStreamMP3/AudioStreamMP3::2694020793275635532::1745125685::1745131042::1::::<><><>0<>0<>8ff19104543cda79cf9faf89ab2659e7<>res://.godot/imported/G5.mp3-9109b2e8618200176d0044c8db2a9235.mp3str::
 MC_Music.mp3::AudioStreamMP3/AudioStreamMP3::1394006784823576230::1745150161::1745150162::1::::<><><>0<>0<>b5b91ab6c0c2e6ab4641049628eaace7<>res://.godot/imported/MC_Music.mp3-3d5ab29b16705c385d7cee706afa53fb.mp3str::
-=======
-::res://::1745163295
-background.png::CompressedTexture2D/CompressedTexture2D::1589449674321095382::1745127442::1745127644::1::::<><><>0<>0<>b80eb888c671e2a073da23363d14c991<>res://.godot/imported/background.png-98289422cd7d93003950872a7b97021f.ctex::
-BOWIE-Sheet.png::CompressedTexture2D::849303387182470742::1745156455::1745156534::1::::<><><>0<>0<>098ac872c6211f9f2f8e2f3b58800a24<>res://.godot/imported/BOWIE-Sheet.png-351c6b4f7b65ba8dda290aeb10efa6f5.ctex::
-BOWIE.json::JSON::-1::1745156431::0::1::::<><><>0<>0<><>::
-bowie.png::CompressedTexture2D/CompressedTexture2D::5769156931146152382::1745127442::1745127645::1::::<><><>0<>0<>9fcf8c1954e1b0827d2d2bc953e60e14<>res://.godot/imported/bowie.png-b9cbd08646eccde60fad9b7e3bcc9f75.ctex::
-bowie_mouth.png::CompressedTexture2D/CompressedTexture2D::3161550194551910371::1745127442::1745127645::1::::<><><>0<>0<>68195dab602141b1e86b2ad81f313959<>res://.godot/imported/bowie_mouth.png-5e94af197bf9abce027f18066d8be3f5.ctex::
-DialogueScene2.cs::CSharpScript::1934425395415644408::1745163295::0::1::::<>Control<><>0<>0<><>::
-DialogueScene2.tscn::PackedScene::-1::1745162741::0::1::::<><><>0<>0<><>::
-DialogueScene.cs::CSharpScript::7204411056803768632::1745151827::0::1::::<>Control<><>0<>0<><>::
-DialogueScene.tscn::PackedScene::6834532665808956926::1745163267::0::1::::<><><>0<>0<><>::uid://dav4uk0ic3ofw::::res://DialogueScene.cs<>uid://wv7aer4f57bu::::res://background.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf<>uid://cvxvtdqwq0rpr::::res://sarah.png<>uid://dpxohls8fv3ho::::res://sarah_mouth.png<>uid://cogvf3tktro7o::::res://bowie.png<>uid://blbqjf5cd6d04::::res://bowie_mouth.png
-icon.svg::CompressedTexture2D/CompressedTexture2D::4007016512454481131::1745127442::1745127643::1::::<><><>0<>0<>0d43a11d12c253745b9d47c31147f375<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-IntroScene.cs::CSharpScript::8607855382177194488::1745151827::0::1::::<>Control<><>0<>0<><>::
-IntroScene.tscn::PackedScene::4812019050439632097::1745163266::0::1::::<><><>0<>0<><>::uid://duvyedk7u6ajo::::res://IntroScene.cs<>uid://dnacs08f3o1uw::::res://intro_pic.png<>uid://pvagt4levjo4::::res://intro_pic2.png<>uid://t4jc824jpbna::::res://kalimba_sounds/MC_Music.mp3
-intro_pic2.png::CompressedTexture2D::1096196345418122533::1745151827::1745151846::1::::<><><>0<>0<>a8101c5c4b231fe5e3d043929bc6794c<>res://.godot/imported/intro_pic2.png-3109a0d9979974e1fd2cef9c5a023044.ctex::
-intro_pic.png::CompressedTexture2D/CompressedTexture2D::8071871960977020086::1745127442::1745127644::1::::<><><>0<>0<>f51193931b22179a10b4818a5e0fadb8<>res://.godot/imported/intro_pic.png-7a26715012f6a61191ed9b46e3f3d475.ctex::
-kalimba sheet.json::JSON::-1::1745162318::0::1::::<><><>0<>0<><>::
-kalimba sheet.png::CompressedTexture2D::8577290630888611740::1745162318::1745162461::1::::<><><>0<>0<>5aa126337cbe61c351e32465e6cd2317<>res://.godot/imported/kalimba sheet.png-e13a997d550bb610e8233dc6662d63a2.ctex::
-Kalimba.cs::CSharpScript::5841640045242020075::1745163295::0::1::::<>Control<><>0<>0<><>::
-Kalimba.tscn::PackedScene::3059202821827345432::1745163267::0::1::::<><><>0<>0<><>::uid://cphy7tsatbabr::::res://Kalimba.cs<>uid://befeanqn58oak::::res://PIXEL SARAH HEAD.png<>uid://qyqi7avjsfii::::res://kalimba_faces/sarahface.png<>uid://b3x4cf2gmeu42::::res://kalimba_faces/sarahface_sad.png<>uid://iie2bv7f4n86::::res://kalimba_faces/sarahface_mouth.png<>uid://cjvqit0qbpupw::::res://Minecraft.ttf
-kalimba_key.png::CompressedTexture2D/CompressedTexture2D::2005080915770948947::1745127442::1745127645::1::::<><><>0<>0<>8693559ac325fece7facdbe696706fbb<>res://.godot/imported/kalimba_key.png-05f8175d6bf23fdded713383433173b6.ctex::
-KeysContainer.cs::CSharpScript/CSharpScript::584990599424122536::1745127442::0::1::::<><><>0<>0<><>::
-Minecraft.ttf::FontFile/FontFile::5448879688491930924::1745127442::1745127643::1::::<><><>0<>0<>7b2abe1098888d3f6afae96ba9c75cb6<>res://.godot/imported/Minecraft.ttf-b4cc597ac42d1410cc55dc192f0c0e34.fontdata::
-PIXEL SARAH HEAD.png::CompressedTexture2D::2677741523139081674::1745127998::1745128678::1::::<><><>0<>0<>025446bfd211a8be40fb383820d8c5e1<>res://.godot/imported/PIXEL SARAH HEAD.png-649ebc71c9b29cf9c301b79f0fdcd4b3.ctex::
-level_1.tscn::PackedScene::6400969151543454755::1745154511::0::1::::<><><>0<>0<><>::uid://dynp2fjrx7ea7::::res://BOWIE1.png<>uid://ot8ulfprbsv0::::res://BOWIE2.png<>uid://cx8pqjh87pwnx::::res://BOWIE3.png<>uid://d3oglc8xtu4g1::::res://BOWIE4.png
-bowierun.tscn::PackedScene::6429958998362925054::1745163267::0::1::::<><><>0<>0<><>::uid://dug5yun0bxd8g::::res://kalimba sheet.png
-sarah.png::CompressedTexture2D/CompressedTexture2D::6295596942369430363::1745127442::1745127645::1::::<><><>0<>0<>601db99b8bf08111662a859acd94029b<>res://.godot/imported/sarah.png-4dc6ccb4bfe9adbcd8769b7ef1809bff.ctex::
-sarah_mouth.png::CompressedTexture2D/CompressedTexture2D::8260438539519468292::1745127442::1745127645::1::::<><><>0<>0<>379f0498d2a3da4983673c88c614b5ee<>res://.godot/imported/sarah_mouth.png-9e095189890f012e5c320ac1f2c2a997.ctex::
-start1.png::CompressedTexture2D::982814859475369830::1745163295::1745163344::1::::<><><>0<>0<>9a2c19a46ae83fba474fc14b1a33087e<>res://.godot/imported/start1.png-aef2bb242625a25fa626315fbbffc63c.ctex::
-start2.png::CompressedTexture2D::5319767008694100350::1745163295::1745163344::1::::<><><>0<>0<>d616b0da675b6a102b2c016dd8aae448<>res://.godot/imported/start2.png-4996fe18b1f1831fcb6205977993f87a.ctex::
-StartScene.cs::CSharpScript::-1::1745163295::0::1::::<><><>0<>0<><>::
-StartScene.tscn::PackedScene::-1::1745163295::0::1::::<><><>0<>0<><>::
-::res://kalimba sprites/::1745162742
-kalimba sheet.json::JSON::-1::1745162697::0::1::::<><><>0<>0<><>::
-kalimba sheet.png::CompressedTexture2D::5845288348998637115::1745162697::1745162742::1::::<><><>0<>0<>99c483f3eefa2f8e642b61286f9d5020<>res://.godot/imported/kalimba sheet.png-f67e7540f95b380efa08195d0cc7eb87.ctex::
-::res://kalimba_faces/::1745162742
-bowieface.png::CompressedTexture2D::2683846935667505918::1745131274::1745151827::1::::<><><>0<>0<>9afc7abc89c7305cfad011d58027f9d5<>res://.godot/imported/bowieface.png-b951776f0d34223c136574a80543df7c.ctex::
-bowieface_mouth.png::CompressedTexture2D::7414722856149323699::1745131274::1745151827::1::::<><><>0<>0<>32b84ca4355fea507f62b29ed8f61d18<>res://.godot/imported/bowieface_mouth.png-302e0fc680161e9deb5ce0c607008c7f.ctex::
-bowieface_sad.png::CompressedTexture2D::6544548195190452271::1745131274::1745151827::1::::<><><>0<>0<>54a912430d3697b29bbd26d7818631b8<>res://.godot/imported/bowieface_sad.png-dc4d532c3e872cd4c8bbec52da355064.ctex::
-sarahface.png::CompressedTexture2D::1173554004255544428::1745131274::1745151827::1::::<><><>0<>0<>5b178594fbb35f67020c356a3a33baac<>res://.godot/imported/sarahface.png-29e8ce85d41d0e04b629fefae3db3d5d.ctex::
-sarahface_mouth.png::CompressedTexture2D::578316941969249453::1745131274::1745151827::1::::<><><>0<>0<>6aad002e2a1e3663c94132bb860a956a<>res://.godot/imported/sarahface_mouth.png-78cfa6430e5d010bdabfaf2eb6721cf8.ctex::
-sarahface_sad.png::CompressedTexture2D::4400953662894719781::1745131274::1745151827::1::::<><><>0<>0<>0e82da739bde67dc39db876923b4c7af<>res://.godot/imported/sarahface_sad.png-c09729b4a983affa7b792d3ad710b537.ctex::
-Sarah_Happy.png::CompressedTexture2D::3333972816238766752::1745162697::1745162742::1::::<><><>0<>0<>df2dfbcba04547213cccb431d6c38d85<>res://.godot/imported/Sarah_Happy.png-661f74cd83afa6d59063b6b33629b539.ctex::
-::res://kalimba_sounds/::1745151845
-A4.mp3::AudioStreamMP3::621861980126028539::1745131274::1745151827::1::::<><><>0<>0<>9343e57bf554ba9a0d8d21ae59f15a35<>res://.godot/imported/A4.mp3-2c29a3da2401b1c372f539e37175a4a0.mp3str::
-A5.mp3::AudioStreamMP3::2536066785635552662::1745131274::1745151827::1::::<><><>0<>0<>57c8b1c223b667d124c6d542f5ee9ba1<>res://.godot/imported/A5.mp3-a062d46d23e43b941e00cf6d47283dc7.mp3str::
-B4.mp3::AudioStreamMP3::2946175466510958180::1745131274::1745151827::1::::<><><>0<>0<>3fa8acf069ca83e706f36276f6d3152f<>res://.godot/imported/B4.mp3-4a2b589daacb48f2e31e7061ea89921f.mp3str::
-B5.mp3::AudioStreamMP3::888736464497871387::1745131274::1745151827::1::::<><><>0<>0<>4d8bc45e7399b26211f0efdc716403a7<>res://.godot/imported/B5.mp3-b3e8e0de16dc56e709acae5215ea8d85.mp3str::
-C4.mp3::AudioStreamMP3::4472846014187661457::1745131274::1745151827::1::::<><><>0<>0<>9cb655653393718967087b5d9d50b7d6<>res://.godot/imported/C4.mp3-cf9db53adaeedc6c13b942fdf8f76346.mp3str::
-C5.mp3::AudioStreamMP3::1380059175475563421::1745131274::1745151827::1::::<><><>0<>0<>6d964adbeae01d5b9e7c366722ccd605<>res://.godot/imported/C5.mp3-6700dc197b933b489d3ef972f10f907f.mp3str::
-C6.mp3::AudioStreamMP3::570708174160148457::1745131274::1745151827::1::::<><><>0<>0<>efff833f94554f278a50c1b1aa503800<>res://.godot/imported/C6.mp3-79e523eb0f0edf37a0fce6217edd7222.mp3str::
-D4.mp3::AudioStreamMP3::5366120587897010495::1745131274::1745151827::1::::<><><>0<>0<>d8f8bdad1af3256f08010434a618ff6f<>res://.godot/imported/D4.mp3-c92aac2bc776c65ff18ea332e060c799.mp3str::
-D5.mp3::AudioStreamMP3::1748745743005135027::1745131274::1745151827::1::::<><><>0<>0<>0cad323c4c4ee22af01eddec01981ca1<>res://.godot/imported/D5.mp3-cb7198aae7fca99416fab17a1fd606ed.mp3str::
-D6.mp3::AudioStreamMP3::2462030270838086028::1745131274::1745151827::1::::<><><>0<>0<>f7c533a10836c1ab67ecf56d6d600569<>res://.godot/imported/D6.mp3-e932f25d798f946f1124d5feb75cca73.mp3str::
-E4.mp3::AudioStreamMP3::192955210768679683::1745131274::1745151827::1::::<><><>0<>0<>92cdc99770560056d1c3239f04acc879<>res://.godot/imported/E4.mp3-8cd9929d9c4420f28a22d85e8574ad79.mp3str::
-E5.mp3::AudioStreamMP3::7264844157834943879::1745131274::1745151827::1::::<><><>0<>0<>ad9ea79bdb38f3b8890add65aa0af2c8<>res://.godot/imported/E5.mp3-c99c0240f51e9dc55dfde597785aedce.mp3str::
-E6.mp3::AudioStreamMP3::7581551854493939761::1745131274::1745151827::1::::<><><>0<>0<>97e3b9086d967a0a75fcda1a72390677<>res://.godot/imported/E6.mp3-6fdd8bcaa242711396b87b2463138136.mp3str::
-F4.mp3::AudioStreamMP3::7269900101807294965::1745131274::1745151827::1::::<><><>0<>0<>1ee6a34d69b812b35e20c38ec2f5fcdd<>res://.godot/imported/F4.mp3-b046794766303a23f876484e301823cb.mp3str::
-F5.mp3::AudioStreamMP3::8090635718448776349::1745131274::1745151827::1::::<><><>0<>0<>b2bac5f6099350ad723d4546643e6078<>res://.godot/imported/F5.mp3-0cdc727c64cf2063f9923381173216be.mp3str::
-G4.mp3::AudioStreamMP3::331530917577894260::1745131274::1745151827::1::::<><><>0<>0<>2ec30a8232a82e44df047df82ec7d00b<>res://.godot/imported/G4.mp3-dd8dc58b3c0852269fa8e62f2fc62406.mp3str::
-G5.mp3::AudioStreamMP3::2694020793275635532::1745131274::1745151827::1::::<><><>0<>0<>8ff19104543cda79cf9faf89ab2659e7<>res://.godot/imported/G5.mp3-9109b2e8618200176d0044c8db2a9235.mp3str::
-MC_Music.mp3::AudioStreamMP3::1394006784823576230::1745151827::1745151845::1::::<><><>0<>0<>b5b91ab6c0c2e6ab4641049628eaace7<>res://.godot/imported/MC_Music.mp3-3d5ab29b16705c385d7cee706afa53fb.mp3str::
->>>>>>> 4ea96ed70b0257d4f12f1b6432b1bb9fc0ab2dab
