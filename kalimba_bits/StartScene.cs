@@ -3,46 +3,60 @@ using System;
 
 public partial class StartScene : Control
 {
-	private Sprite2D image1;
-	private Sprite2D image2;
-	private Timer imageSwitchTimer;
+	private Sprite2D Image1;
+	private Sprite2D Image2;
+	private Timer ImageSwitchTimer;
+	private TextureButton StartButton;
+	private TextureButton OptionButton;
 
 	public override void _Ready()
 	{
 		// Get the nodes
-		image1 = GetNode<Sprite2D>("Image1");
-		image2 = GetNode<Sprite2D>("Image2");
-		imageSwitchTimer = GetNode<Timer>("ImageSwitchTimer");
+		Image1 = GetNode<Sprite2D>("Image1");
+		Image2 = GetNode<Sprite2D>("Image2");
+		ImageSwitchTimer = GetNode<Timer>("ImageSwitchTimer");
+		StartButton = GetNode<TextureButton>("StartButton");
+		OptionButton = GetNode<TextureButton>("OptionButton");
 
 		// Initially show the first image
-		image1.Visible = true;
-		image2.Visible = false;
+		Image1.Visible = true;
+		Image2.Visible = false;
 
-		// Connect the timer's Timeout signal to the function that will switch images
-		imageSwitchTimer.Timeout += OnImageSwitchTimeout;
+		// Connect timer signal to switch images
+		ImageSwitchTimer.Timeout += OnImageSwitchTimeout;
+		ImageSwitchTimer.Start();
 
-		// Start the timer to begin switching images
-		imageSwitchTimer.Start();
+		// Connect the button's pressed signal to functions
+		StartButton.Pressed += OnStartButtonPressed;
+		OptionButton.Pressed += OnOptionButtonPressed;
 	}
 
 	private void OnImageSwitchTimeout()
 	{
 		// Toggle visibility between the two images
-		image1.Visible = !image1.Visible;
-		image2.Visible = !image2.Visible;
+		Image1.Visible = !Image1.Visible;
+		Image2.Visible = !Image2.Visible;
 	}
 
-	public override void _Input(InputEvent @event)
+	private void OnStartButtonPressed()
 	{
-		if (@event.IsActionPressed("ui_accept"))
-		{
-			// Switch to the next scene
-			GoToDialogue();
-		}
+		// Go to the game scene
+		GoToGame();
 	}
 
-	private void GoToDialogue()
+	private void OnOptionButtonPressed()
+	{
+		// Go to the options scene
+		GoToOption();
+	}
+
+	private void GoToGame()
 	{
 		GetTree().ChangeSceneToFile("res://DialogueScene.tscn");
+	}
+
+	private void GoToOption()
+	{
+		GetTree().ChangeSceneToFile("res://Kalimba.tscn");
 	}
 }

@@ -29,12 +29,14 @@ grow_vertical = 2
 script = ExtResource("1_wagtx")
 
 [node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 1919.0
 offset_bottom = 1080.0
 texture = ExtResource("1_ekqs6")
 expand_mode = 1
 
 [node name="DialoguePanel" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 781.0
 offset_right = 1883.0

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\theny\\KalimbaQuest\\kalimba_bits\\Kalimba_Quest.csproj": {}
+    "/Users/bowielee/kalimba_quest/kalimba_bits/Kalimba_Quest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\theny\\KalimbaQuest\\kalimba_bits\\Kalimba_Quest.csproj": {
+    "/Users/bowielee/kalimba_quest/kalimba_bits/Kalimba_Quest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\theny\\KalimbaQuest\\kalimba_bits\\Kalimba_Quest.csproj",
+        "projectUniqueName": "/Users/bowielee/kalimba_quest/kalimba_bits/Kalimba_Quest.csproj",
         "projectName": "Kalimba_Quest",
-        "projectPath": "C:\\Users\\theny\\KalimbaQuest\\kalimba_bits\\Kalimba_Quest.csproj",
-        "packagesPath": "C:\\Users\\theny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\theny\\KalimbaQuest\\kalimba_bits\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "/Users/bowielee/kalimba_quest/kalimba_bits/Kalimba_Quest.csproj",
+        "packagesPath": "/Users/bowielee/.nuget/packages/",
+        "outputPath": "/Users/bowielee/kalimba_quest/kalimba_bits/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\theny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bowielee/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
