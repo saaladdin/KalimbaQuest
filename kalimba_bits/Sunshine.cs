@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 public partial class Sunshine : Control
 {
 	private Dictionary<string, AudioStream> sounds = new();
+	private List<string> tutorialNotes = new() { "G4", "C5", "D5", "E5", "E5" };
 
 	// Two sets of tutorial note sequences
 	private List<List<string>> tutorialNoteSequences = new()
