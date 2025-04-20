@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3necrbt75j3b"]
+
+[ext_resource type="Texture2D" uid="uid://oac21vbvlu11" path="res://start1.png" id="1_2j6u4"]
+[ext_resource type="Script" uid="uid://c1f1hfduynaea" path="res://StartScene.cs" id="1_kds3s"]
+[ext_resource type="Texture2D" uid="uid://ch161x6tweiq5" path="res://start2.png" id="2_kds3s"]
+[ext_resource type="AudioStream" uid="uid://t4jc824jpbna" path="res://kalimba_sounds/MC_Music.mp3" id="3_fgskh"]
+
+[node name="StartScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kds3s")
+
+[node name="Image1" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_2j6u4")
+
+[node name="Image2" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_kds3s")
+
+[node name="ImageSwitchTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="BackgroundAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fgskh")
+autoplay = true
