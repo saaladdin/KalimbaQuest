@@ -1,2 +1,0 @@
-﻿55360
-/Users/bowielee/Desktop/Godot_mono.app/Contents/MacOS/Godot
