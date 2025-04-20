@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=3 uid="uid://bw73syn7ho3t6"]
+
+[ext_resource type="Texture2D" uid="uid://wv7aer4f57bu" path="res://background.png" id="1_ekqs6"]
+[ext_resource type="Script" uid="uid://2tbx6n3w4ku7" path="res://DialogueScene2.cs" id="1_wagtx"]
+[ext_resource type="Texture2D" uid="uid://cvxvtdqwq0rpr" path="res://sarah.png" id="2_wagtx"]
+[ext_resource type="Texture2D" uid="uid://dpxohls8fv3ho" path="res://sarah_mouth.png" id="3_tceti"]
+[ext_resource type="Texture2D" uid="uid://cogvf3tktro7o" path="res://bowie.png" id="4_bv4vt"]
+[ext_resource type="Texture2D" uid="uid://blbqjf5cd6d04" path="res://bowie_mouth.png" id="5_pehjq"]
+[ext_resource type="FontFile" uid="uid://cjvqit0qbpupw" path="res://Minecraft.ttf" id="6_eadew"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eee8g"]
+bg_color = Color(0.727839, 0.50246, 0.779444, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="DialogueScene2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wagtx")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1919.0
+offset_bottom = 1080.0
+texture = ExtResource("1_ekqs6")
+expand_mode = 1
+
+[node name="DialoguePanel" type="Panel" parent="."]
+offset_left = 40.0
+offset_top = 781.0
+offset_right = 1883.0
+offset_bottom = 1023.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_eee8g")
+
+[node name="Sarah" type="Sprite2D" parent="DialoguePanel"]
+show_behind_parent = true
+position = Vector2(1349, -241)
+scale = Vector2(0.607422, 0.607422)
+texture = ExtResource("2_wagtx")
+
+[node name="Sarah_Talk" type="Sprite2D" parent="DialoguePanel"]
+show_behind_parent = true
+position = Vector2(1349, -241)
+scale = Vector2(0.607422, 0.607422)
+texture = ExtResource("3_tceti")
+
+[node name="Bowie" type="Sprite2D" parent="DialoguePanel"]
+show_behind_parent = true
+position = Vector2(452, -205)
+scale = Vector2(0.511719, 0.511719)
+texture = ExtResource("4_bv4vt")
+
+[node name="Bowie_Talk" type="Sprite2D" parent="DialoguePanel"]
+show_behind_parent = true
+position = Vector2(452, -205)
+scale = Vector2(0.511719, 0.511719)
+texture = ExtResource("5_pehjq")
+
+[node name="SpeakerLabel" type="Label" parent="DialoguePanel"]
+z_index = 1
+layout_mode = 0
+offset_left = 54.0
+offset_top = 41.0
+offset_right = 284.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("6_eadew")
+theme_override_font_sizes/font_size = 40
+vertical_alignment = 1
+
+[node name="DialogueLabel" type="Label" parent="DialoguePanel"]
+z_index = 1
+layout_mode = 0
+offset_left = 53.0
+offset_top = 115.0
+offset_right = 1786.0
+offset_bottom = 208.0
+theme_override_fonts/font = ExtResource("6_eadew")
+theme_override_font_sizes/font_size = 35
+text = "..."
+autowrap_mode = 2
