@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3necrbt75j3b"]
+[gd_scene load_steps=9 format=3 uid="uid://b3necrbt75j3b"]
 
 [ext_resource type="Texture2D" uid="uid://oac21vbvlu11" path="res://start1.png" id="1_2j6u4"]
 [ext_resource type="Script" uid="uid://c1f1hfduynaea" path="res://StartScene.cs" id="1_kds3s"]
@@ -6,6 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://t4jc824jpbna" path="res://kalimba_sounds/MC_Music.mp3" id="3_fgskh"]
 [ext_resource type="Texture2D" uid="uid://bpcout3aowye1" path="res://Start.png" id="5_fgskh"]
 [ext_resource type="Texture2D" uid="uid://cvyi8w2745caq" path="res://Option.png" id="6_430fp"]
+[ext_resource type="Texture2D" uid="uid://bqtreeoxp36in" path="res://jump1.png" id="7_iop1y"]
+[ext_resource type="Texture2D" uid="uid://bia1gwiju4imt" path="res://jump2.png" id="8_uvkb0"]
 
 [node name="StartScene" type="Control"]
 layout_mode = 3
@@ -54,3 +56,11 @@ action_mode = 0
 texture_normal = ExtResource("6_430fp")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Jump1" type="Sprite2D" parent="."]
+position = Vector2(897, 485)
+texture = ExtResource("7_iop1y")
+
+[node name="Jump2" type="Sprite2D" parent="."]
+position = Vector2(897, 485)
+texture = ExtResource("8_uvkb0")
