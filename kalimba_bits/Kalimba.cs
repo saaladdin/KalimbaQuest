@@ -113,12 +113,16 @@ public partial class Kalimba : Control
 		if (note == tutorialNotes[currentNoteIndex])
 		{
 			currentNoteIndex++;
-			GD.Print($"✅ {note}");
 
 			if (currentNoteIndex >= tutorialNotes.Count)
 			{
 				await ShowDialogue("Sarah", "You played it perfectly! YAY!! <3");
 				isPlayerTurn = false;
+				
+				await ShowDialogue("Sarah", "Great job! Now, let's move on to the next step.");
+				await ToSignal(GetTree().CreateTimer(1.0f), "timeout"); // Optional wait before transitioning
+				
+				GetTree().ChangeSceneToFile("res://DialogueScene2.tscn");
 			}
 		}
 		else
