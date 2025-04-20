@@ -1,11 +1,11 @@
 { "frames": {
    "kalimba sheet.aseprite": {
-    "frame": { "x": 0, "y": 0, "w": 130, "h": 130 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 130, "h": 130 },
-    "sourceSize": { "w": 130, "h": 130 },
-    "duration": 100
+	"frame": { "x": 0, "y": 0, "w": 130, "h": 130 },
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": { "x": 0, "y": 0, "w": 130, "h": 130 },
+	"sourceSize": { "w": 130, "h": 130 },
+	"duration": 100
    }
  },
  "meta": {
