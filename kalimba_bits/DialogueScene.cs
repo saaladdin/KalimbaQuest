@@ -17,7 +17,7 @@ public partial class DialogueScene : Control
 	{
 		("Sarah", "So... you wish to learn the ancient feline art of KALIMBA."),
 		("Sarah", "You have a long but rewarding journey ahead. MROW!!"),
-		("Bowie", "MROW!!")
+		("Bowie", "MROW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 	};
 
 	public override void _Ready()

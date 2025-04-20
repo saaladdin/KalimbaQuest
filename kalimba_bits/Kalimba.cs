@@ -1,12 +1,21 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 public partial class Kalimba : Control
 {
 	private Dictionary<string, AudioStream> sounds = new();
+	
+	private Sprite2D Sarah;
+	private Texture2D SarahSad;
+	private Texture2D sadFace;
 
-	public override void _Ready()
+	private List<string> tutorialNotes = new() { "C4", "E4", "G4", "C5" };
+	private int currentNoteIndex = 0;
+	private bool isPlayerTurn = false;
+
+	public override async void _Ready()
 	{
 		// Preload all the sounds
 		sounds["D6"] = GD.Load<AudioStream>("res://kalimba_sounds/D6.mp3");
@@ -27,36 +36,94 @@ public partial class Kalimba : Control
 		sounds["C6"] = GD.Load<AudioStream>("res://kalimba_sounds/C6.mp3");
 		sounds["E6"] = GD.Load<AudioStream>("res://kalimba_sounds/E6.mp3");
 
-		// Loop through children and auto-connect buttons by name
+		// Hook up button presses
 		foreach (Node child in GetNode("KeysContainer").GetChildren())
 		{
 			if (child is Button button)
 			{
-				string note = button.Name; // Assuming names like "C4", "D5", etc.
+				string note = button.Name;
 				if (sounds.ContainsKey(note))
 				{
-					button.Pressed += () => PlayNote(note); // Connect the button press to the sound
+					button.Pressed += () => PlayNote(note);
 				}
 			}
 		}
+
+		// Play tutorial notes
+		await PlayTutorial();
+		isPlayerTurn = true;
+		GD.Print("🎵 Your turn! Repeat the melody.");
 	}
+
+	private async Task PlayTutorial()
+	{
+		GD.Print("👂 Listen to the melody...");
+		foreach (string note in tutorialNotes)
+		{
+			await HighlightAndPlay(note);
+			await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
+		}
+	}
+	
+	private async Task HighlightAndPlay(string note)
+	{
+		// Play the sound
+		PlayNote(note);
+
+		// Try to find and "press" the button visually
+		var keyButton = GetNodeOrNull<Button>($"KeysContainer/{note}");
+		if (keyButton != null)
+		{
+			// Simulate press by changing modulate color
+			var originalColor = keyButton.Modulate;
+			keyButton.Modulate = new Color(1, 1, 0.5f); // yellow-ish
+
+			await ToSignal(GetTree().CreateTimer(0.25f), "timeout");
+
+			keyButton.Modulate = originalColor;
+		}
+	}
+
 
 	private void PlayNote(string note)
 	{
 		if (sounds.TryGetValue(note, out var sound))
 		{
-			// Create a new AudioStreamPlayer and set its stream to the correct note sound
 			var player = new AudioStreamPlayer();
 			player.Stream = sound;
-			AddChild(player); // Add the player to the scene tree
-			player.Play(); // Play the sound
-
-			// Free the player after the sound finishes
+			AddChild(player);
+			player.Play();
 			player.Finished += () => player.QueueFree();
 		}
 		else
 		{
 			GD.PrintErr($"Sound for {note} not found!");
+		}
+
+		if (isPlayerTurn)
+		{
+			CheckPlayerInput(note);
+		}
+	}
+
+	private void CheckPlayerInput(string note)
+	{
+		if (note == tutorialNotes[currentNoteIndex])
+		{
+			currentNoteIndex++;
+			GD.Print($"✅ {note}");
+
+			if (currentNoteIndex >= tutorialNotes.Count)
+			{
+				GD.Print("🎉 You played it perfectly!");
+				isPlayerTurn = false;
+				// Optionally: advance to next level or restart tutorial
+			}
+		}
+		else
+		{
+			GD.Print($"❌ {note} was wrong! Starting over.");
+			currentNoteIndex = 0;
 		}
 	}
 }

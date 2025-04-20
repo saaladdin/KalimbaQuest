@@ -43,6 +43,6 @@ public partial class IntroScene : Control
 
 	private void GoToDialogue()
 	{
-		GetTree().ChangeSceneToFile("res://kalimba_bits/DialogueScene.tscn");
+		GetTree().ChangeSceneToFile("res://DialogueScene.tscn");
 	}
 }

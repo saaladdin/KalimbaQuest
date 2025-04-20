@@ -159,6 +159,12 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
+[node name="Sarah_Normal" type="Sprite2D" parent="."]
+
+[node name="Sarah_Sad" type="Sprite2D" parent="."]
+
+[node name="Sarah_Talk" type="Sprite2D" parent="."]
+
 [node name="A" type="Control" parent="."]
 anchors_preset = 0
 offset_left = -225.0

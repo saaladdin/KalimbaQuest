@@ -30,39 +30,40 @@ script = ExtResource("1_08vf1")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1919.0
+offset_bottom = 1080.0
 texture = ExtResource("2_efucv")
+expand_mode = 1
 
 [node name="DialoguePanel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 275.0
-offset_top = 1157.0
-offset_right = 2118.0
-offset_bottom = 1576.0
+offset_left = 40.0
+offset_top = 781.0
+offset_right = 1883.0
+offset_bottom = 1023.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_aay13")
 
 [node name="Sarah" type="Sprite2D" parent="DialoguePanel"]
 show_behind_parent = true
-position = Vector2(1291, -293)
+position = Vector2(1349, -241)
 scale = Vector2(0.607422, 0.607422)
 texture = ExtResource("4_1ener")
 
 [node name="Sarah_Talk" type="Sprite2D" parent="DialoguePanel"]
 show_behind_parent = true
-position = Vector2(1291, -293)
+position = Vector2(1349, -241)
 scale = Vector2(0.607422, 0.607422)
 texture = ExtResource("4_n0jgp")
 
 [node name="Bowie" type="Sprite2D" parent="DialoguePanel"]
 show_behind_parent = true
-position = Vector2(476, -220)
+position = Vector2(452, -205)
 scale = Vector2(0.511719, 0.511719)
 texture = ExtResource("5_bdddm")
 
 [node name="Bowie_Talk" type="Sprite2D" parent="DialoguePanel"]
 show_behind_parent = true
-position = Vector2(476, -220)
+position = Vector2(452, -205)
 scale = Vector2(0.511719, 0.511719)
 texture = ExtResource("6_o2b42")
 
@@ -83,7 +84,7 @@ layout_mode = 0
 offset_left = 53.0
 offset_top = 115.0
 offset_right = 1786.0
-offset_bottom = 359.0
+offset_bottom = 208.0
 theme_override_fonts/font = ExtResource("3_aay13")
 theme_override_font_sizes/font_size = 35
 text = "..."
