@@ -1,5 +1,5 @@
-res://IntroScene.cs
-res://IntroScene.tscn
-res://DialogueScene.tscn
-res://DialogueScene.cs
-res://Kalimba.tscn
+res://kalimba_bits/IntroScene.tscn
+res://kalimba_bits/DialogueScene.tscn
+res://kalimba_bits/Kalimba.tscn
+res://kalimba_bits/IntroScene.cs
+res://kalimba_bits/DialogueScene.cs

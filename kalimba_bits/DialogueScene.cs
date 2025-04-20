@@ -57,7 +57,7 @@ public partial class DialogueScene : Control
 		}
 		else
 		{
-			GetTree().ChangeSceneToFile("res://Kalimba.tscn");
+			GetTree().ChangeSceneToFile("res://kalimba_bits/Kalimba.tscn");
 		}
 	}
 	

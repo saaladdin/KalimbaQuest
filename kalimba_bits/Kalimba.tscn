@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bjt5vg13yn03u"]
 
-[ext_resource type="Script" uid="uid://cphy7tsatbabr" path="res://Kalimba.cs" id="1_qn86k"]
-[ext_resource type="Texture2D" uid="uid://befeanqn58oak" path="res://PIXEL SARAH HEAD.png" id="2_4ha6v"]
+[ext_resource type="Script" uid="uid://cphy7tsatbabr" path="res://kalimba_bits/Kalimba.cs" id="1_qn86k"]
+[ext_resource type="Texture2D" uid="uid://befeanqn58oak" path="res://kalimba_bits/PIXEL SARAH HEAD.png" id="2_4ha6v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ha6v"]
 bg_color = Color(0.814016, 0.469888, 0.666742, 1)

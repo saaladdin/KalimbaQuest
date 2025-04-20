@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpxohls8fv3ho"
-path="res://.godot/imported/sarah_mouth.png-9e095189890f012e5c320ac1f2c2a997.ctex"
+path="res://.godot/imported/sarah_mouth.png-b714ba9624c61b6d273a042b319d52fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sarah_mouth.png"
-dest_files=["res://.godot/imported/sarah_mouth.png-9e095189890f012e5c320ac1f2c2a997.ctex"]
+source_file="res://kalimba_bits/sarah_mouth.png"
+dest_files=["res://.godot/imported/sarah_mouth.png-b714ba9624c61b6d273a042b319d52fa.ctex"]
 
 [params]
 
