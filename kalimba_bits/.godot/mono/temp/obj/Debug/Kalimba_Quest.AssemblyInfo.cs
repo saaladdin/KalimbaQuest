@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kalimba_Quest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+356ea2542ae7a249cfd7fa4e938256a8239603aa")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98364bd5512e7c8dccb86995a377e52c83345361")]
+>>>>>>> 4ea96ed70b0257d4f12f1b6432b1bb9fc0ab2dab
 [assembly: System.Reflection.AssemblyProductAttribute("Kalimba_Quest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kalimba_Quest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

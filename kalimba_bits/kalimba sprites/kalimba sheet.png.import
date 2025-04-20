@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://blfnddmfystht"
+=======
+uid="uid://cpjrbsevxb7it"
+>>>>>>> 4ea96ed70b0257d4f12f1b6432b1bb9fc0ab2dab
 path="res://.godot/imported/kalimba sheet.png-f67e7540f95b380efa08195d0cc7eb87.ctex"
 metadata={
 "vram_texture": false

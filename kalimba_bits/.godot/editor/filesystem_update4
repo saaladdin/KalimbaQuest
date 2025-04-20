@@ -1,10 +1,19 @@
-res://IntroScene.tscn
 res://Kalimba.tscn
+res://IntroScene.tscn
 res://DialogueScene.tscn
+<<<<<<< HEAD
 res://DialogueScene2.tscn
 res://StartScene.tscn
+=======
+>>>>>>> 4ea96ed70b0257d4f12f1b6432b1bb9fc0ab2dab
 res://DialogueScene.cs
-res://IntroScene.cs
 res://Kalimba.cs
+res://IntroScene.cs
+<<<<<<< HEAD
+res://Kalimba.cs
+=======
+res://level_1.tscn
+res://bowierun.tscn
+>>>>>>> 4ea96ed70b0257d4f12f1b6432b1bb9fc0ab2dab
 res://DialogueScene2.cs
 res://StartScene.cs
