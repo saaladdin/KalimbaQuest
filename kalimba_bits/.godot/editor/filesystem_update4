@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-res://Kalimba.tscn
->>>>>>> 1a9aa5066ce4148f7a32e3d449af588e7962dd2a
 res://IntroScene.tscn
 res://Kalimba.tscn
 res://DialogueScene.tscn
@@ -9,10 +5,5 @@ res://dialogue_scene_2.tscn
 res://DialogueScene2.cs
 res://Kalimba.cs
 res://DialogueScene.cs
-res://Kalimba.cs
 res://IntroScene.cs
-<<<<<<< HEAD
 res://DialogueScene2.tscn
-=======
-res://level_1.tscn
->>>>>>> 1a9aa5066ce4148f7a32e3d449af588e7962dd2a
