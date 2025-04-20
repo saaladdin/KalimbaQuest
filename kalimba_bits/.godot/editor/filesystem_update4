@@ -1,1 +1,6 @@
+res://IntroScene.tscn
+res://DialogueScene.tscn
 res://Kalimba.tscn
+res://DialogueScene.cs
+res://IntroScene.cs
+res://Kalimba.cs

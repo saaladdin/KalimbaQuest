@@ -26,7 +26,6 @@ public partial class Kalimba : Control
 		sounds["A5"] = GD.Load<AudioStream>("res://kalimba_sounds/A5.mp3");
 		sounds["C6"] = GD.Load<AudioStream>("res://kalimba_sounds/C6.mp3");
 		sounds["E6"] = GD.Load<AudioStream>("res://kalimba_sounds/E6.mp3");
-		
 
 		// Loop through children and auto-connect buttons by name
 		foreach (Node child in GetNode("KeysContainer").GetChildren())
@@ -36,7 +35,7 @@ public partial class Kalimba : Control
 				string note = button.Name; // Assuming names like "C4", "D5", etc.
 				if (sounds.ContainsKey(note))
 				{
-					button.Pressed += () => PlayNote(note);
+					button.Pressed += () => PlayNote(note); // Connect the button press to the sound
 				}
 			}
 		}
@@ -46,11 +45,18 @@ public partial class Kalimba : Control
 	{
 		if (sounds.TryGetValue(note, out var sound))
 		{
+			// Create a new AudioStreamPlayer and set its stream to the correct note sound
 			var player = new AudioStreamPlayer();
 			player.Stream = sound;
-			AddChild(player);
-			player.Play();
+			AddChild(player); // Add the player to the scene tree
+			player.Play(); // Play the sound
+
+			// Free the player after the sound finishes
 			player.Finished += () => player.QueueFree();
+		}
+		else
+		{
+			GD.PrintErr($"Sound for {note} not found!");
 		}
 	}
 }
