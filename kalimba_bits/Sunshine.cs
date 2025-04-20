@@ -176,7 +176,7 @@ public partial class Sunshine : Control
 					await ShowVictoryAnimation();
 					await ShowDialogue("Sarah", "You did it!!! That was perfect!");
 					await ShowDialogue("Sarah", "Let's keep goingggg!");
-					GetTree().ChangeSceneToFile("res://StartScene.tscn");
+					GetTree().ChangeSceneToFile("res://DialogueScene3.tscn");
 				}
 			}
 		}
