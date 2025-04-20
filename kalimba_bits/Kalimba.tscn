@@ -1,15 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjt5vg13yn03u"]
+[gd_scene load_steps=4 format=3 uid="uid://bjt5vg13yn03u"]
 
 [ext_resource type="Script" uid="uid://cphy7tsatbabr" path="res://Kalimba.cs" id="1_qn86k"]
+[ext_resource type="Texture2D" uid="uid://befeanqn58oak" path="res://PIXEL SARAH HEAD.png" id="2_4ha6v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ha6v"]
 bg_color = Color(0.814016, 0.469888, 0.666742, 1)
 
 [node name="Kalimba" type="Control"]
 layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 1.002
+offset_left = 3.0
+offset_top = 11.0
+offset_right = 3.0
+offset_bottom = -0.160156
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qn86k")
@@ -21,23 +25,24 @@ offset_bottom = 40.0
 
 [node name="D6" type="Button" parent="KeysContainer"]
 layout_mode = 0
-offset_left = 67.0
-offset_right = 122.0
-offset_bottom = 424.0
+offset_left = 56.0
+offset_top = -9.0
+offset_right = 111.0
+offset_bottom = 358.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="B5" type="Button" parent="KeysContainer"]
 layout_mode = 0
 offset_left = 155.0
 offset_right = 210.0
-offset_bottom = 452.0
+offset_bottom = 421.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="G5" type="Button" parent="KeysContainer"]
 layout_mode = 0
 offset_left = 252.0
 offset_right = 307.0
-offset_bottom = 497.0
+offset_bottom = 454.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="E5" type="Button" parent="KeysContainer"]
@@ -45,7 +50,7 @@ layout_mode = 0
 offset_left = 341.0
 offset_top = 3.0
 offset_right = 396.0
-offset_bottom = 544.0
+offset_bottom = 510.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="C5" type="Button" parent="KeysContainer"]
@@ -53,7 +58,7 @@ layout_mode = 0
 offset_left = 442.0
 offset_top = 3.0
 offset_right = 497.0
-offset_bottom = 587.0
+offset_bottom = 547.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="A4" type="Button" parent="KeysContainer"]
@@ -61,7 +66,7 @@ layout_mode = 0
 offset_left = 546.0
 offset_top = -1.0
 offset_right = 601.0
-offset_bottom = 628.0
+offset_bottom = 588.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="F4" type="Button" parent="KeysContainer"]
@@ -69,7 +74,7 @@ layout_mode = 0
 offset_left = 656.0
 offset_top = 3.0
 offset_right = 711.0
-offset_bottom = 673.0
+offset_bottom = 642.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="D4" type="Button" parent="KeysContainer"]
@@ -77,7 +82,7 @@ layout_mode = 0
 offset_left = 774.0
 offset_top = 3.0
 offset_right = 829.0
-offset_bottom = 719.0
+offset_bottom = 716.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="C4" type="Button" parent="KeysContainer"]
@@ -85,7 +90,7 @@ layout_mode = 0
 offset_left = 885.0
 offset_top = 3.0
 offset_right = 940.0
-offset_bottom = 827.0
+offset_bottom = 781.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="E4" type="Button" parent="KeysContainer"]
@@ -93,7 +98,7 @@ layout_mode = 0
 offset_left = 990.0
 offset_top = 3.0
 offset_right = 1045.0
-offset_bottom = 719.0
+offset_bottom = 710.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="G4" type="Button" parent="KeysContainer"]
@@ -101,7 +106,7 @@ layout_mode = 0
 offset_left = 1093.0
 offset_top = 1.0
 offset_right = 1148.0
-offset_bottom = 671.0
+offset_bottom = 642.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="B4" type="Button" parent="KeysContainer"]
@@ -109,7 +114,7 @@ layout_mode = 0
 offset_left = 1204.0
 offset_top = 1.0
 offset_right = 1259.0
-offset_bottom = 630.0
+offset_bottom = 579.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="D5" type="Button" parent="KeysContainer"]
@@ -117,7 +122,7 @@ layout_mode = 0
 offset_left = 1324.0
 offset_top = 4.0
 offset_right = 1379.0
-offset_bottom = 588.0
+offset_bottom = 517.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="F5" type="Button" parent="KeysContainer"]
@@ -125,7 +130,7 @@ layout_mode = 0
 offset_left = 1435.0
 offset_top = 3.0
 offset_right = 1490.0
-offset_bottom = 544.0
+offset_bottom = 461.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="A5" type="Button" parent="KeysContainer"]
@@ -133,7 +138,7 @@ layout_mode = 0
 offset_left = 1545.0
 offset_top = 4.0
 offset_right = 1600.0
-offset_bottom = 501.0
+offset_bottom = 407.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="C6" type="Button" parent="KeysContainer"]
@@ -141,7 +146,7 @@ layout_mode = 0
 offset_left = 1642.0
 offset_top = 3.0
 offset_right = 1697.0
-offset_bottom = 455.0
+offset_bottom = 349.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="E6" type="Button" parent="KeysContainer"]
@@ -149,7 +154,7 @@ layout_mode = 0
 offset_left = 1755.0
 offset_top = 4.0
 offset_right = 1810.0
-offset_bottom = 428.0
+offset_bottom = 302.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6v")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -163,5 +168,9 @@ offset_bottom = 184.0
 
 [node name="TextureRect" type="TextureRect" parent="A"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 993.0
+offset_top = 643.0
+offset_right = 1295.0
+offset_bottom = 886.0
+texture = ExtResource("2_4ha6v")
+expand_mode = 1
