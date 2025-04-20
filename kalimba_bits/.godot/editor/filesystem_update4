@@ -1,12 +1,9 @@
-res://IntroScene.tscn
-res://Sunshine.cs
-res://Sunshine.tscn
+res://DialogueScene.tscn
+res://DialogueScene3.tscn
 res://DialogueScene2.cs
 res://Kalimba.cs
 res://StartScene.cs
-res://IntroScene.cs
-res://DialogueScene.cs
 res://DialogueScene3.cs
-res://StartScene.tscn
-res://DialogueScene.tscn
-res://DialogueScene3.tscn
+res://Sunshine.cs
+res://DialogueScene.cs
+res://IntroScene.cs
