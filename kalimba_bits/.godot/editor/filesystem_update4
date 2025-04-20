@@ -6,15 +6,5 @@ res://Kalimba.cs
 res://IntroScene.cs
 res://level_1.tscn
 res://bowierun.tscn
-<<<<<<< HEAD
 res://DialogueScene2.cs
-=======
-=======
-res://DialogueScene2.tscn
-<<<<<<< HEAD
 res://StartScene.cs
-res://StartScene.tscn
-=======
->>>>>>> 420d19614c941fd82c15c9c2c3caa74938b6ab9b
->>>>>>> f2dda233ad40298f6c9ac9091e0e585fb92d9282
->>>>>>> 356ea2542ae7a249cfd7fa4e938256a8239603aa
