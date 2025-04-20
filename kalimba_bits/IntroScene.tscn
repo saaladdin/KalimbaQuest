@@ -14,12 +14,10 @@ script = ExtResource("1_dd8yv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 185.0
-offset_top = 6.0
-offset_right = 1735.0
-offset_bottom = 1083.0
+offset_top = 8.0
+offset_right = 1920.0
+offset_bottom = 1088.0
 texture = ExtResource("2_rsfey")
-expand_mode = 1
 
 [node name="TransitionTimer" type="Timer" parent="."]
 wait_time = 4.0

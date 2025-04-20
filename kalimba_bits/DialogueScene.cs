@@ -57,10 +57,7 @@ public partial class DialogueScene : Control
 		}
 		else
 		{
-			// End of dialogue
-			speakerLabel.Text = "";
-			dialogueLabel.Text = "[End of dialogue]";
-			SetSpeakingSprite("None");
+			GetTree().ChangeSceneToFile("res://Kalimba.tscn");
 		}
 	}
 	
