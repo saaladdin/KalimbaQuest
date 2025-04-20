@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cas8ir3e05obh"]
+[gd_scene load_steps=4 format=3 uid="uid://cas8ir3e05obh"]
 
 [ext_resource type="Script" uid="uid://duvyedk7u6ajo" path="res://IntroScene.cs" id="1_dd8yv"]
 [ext_resource type="Texture2D" uid="uid://dnacs08f3o1uw" path="res://intro_pic.png" id="2_rsfey"]
+[ext_resource type="Texture2D" uid="uid://pvagt4levjo4" path="res://intro_pic2.png" id="3_rsfey"]
 
 [node name="IntroScene" type="Control"]
 layout_mode = 3
@@ -12,14 +13,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dd8yv")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_top = 8.0
-offset_right = 1920.0
-offset_bottom = 1088.0
+[node name="Image1" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1, 1)
 texture = ExtResource("2_rsfey")
 
-[node name="TransitionTimer" type="Timer" parent="."]
-wait_time = 4.0
-one_shot = true
-autostart = true
+[node name="Image2" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1, 1)
+texture = ExtResource("3_rsfey")
+
+[node name="ImageSwitchTimer" type="Timer" parent="."]
+wait_time = 0.5

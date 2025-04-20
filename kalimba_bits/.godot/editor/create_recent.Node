@@ -1,2 +1,7 @@
+CollisionShape2D
+Area2D
+Timer
+Sprite2D
+AnimatedSprite2D
 TextureRect
 Control
