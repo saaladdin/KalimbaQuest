@@ -1,12 +1,12 @@
 [gd_scene load_steps=9 format=3 uid="uid://c4mx0wfu7qs8u"]
 
-[ext_resource type="Script" uid="uid://dav4uk0ic3ofw" path="res://kalimba_bits/DialogueScene.cs" id="1_08vf1"]
-[ext_resource type="Texture2D" uid="uid://wv7aer4f57bu" path="res://kalimba_bits/background.png" id="2_efucv"]
-[ext_resource type="FontFile" uid="uid://cjvqit0qbpupw" path="res://kalimba_bits/Minecraft.ttf" id="3_aay13"]
-[ext_resource type="Texture2D" uid="uid://cvxvtdqwq0rpr" path="res://kalimba_bits/sarah.png" id="4_1ener"]
-[ext_resource type="Texture2D" uid="uid://dpxohls8fv3ho" path="res://kalimba_bits/sarah_mouth.png" id="4_n0jgp"]
-[ext_resource type="Texture2D" uid="uid://cogvf3tktro7o" path="res://kalimba_bits/bowie.png" id="5_bdddm"]
-[ext_resource type="Texture2D" uid="uid://blbqjf5cd6d04" path="res://kalimba_bits/bowie_mouth.png" id="6_o2b42"]
+[ext_resource type="Script" uid="uid://dav4uk0ic3ofw" path="res://DialogueScene.cs" id="1_08vf1"]
+[ext_resource type="Texture2D" uid="uid://wv7aer4f57bu" path="res://background.png" id="2_efucv"]
+[ext_resource type="FontFile" uid="uid://cjvqit0qbpupw" path="res://Minecraft.ttf" id="3_aay13"]
+[ext_resource type="Texture2D" uid="uid://cvxvtdqwq0rpr" path="res://sarah.png" id="4_1ener"]
+[ext_resource type="Texture2D" uid="uid://dpxohls8fv3ho" path="res://sarah_mouth.png" id="4_n0jgp"]
+[ext_resource type="Texture2D" uid="uid://cogvf3tktro7o" path="res://bowie.png" id="5_bdddm"]
+[ext_resource type="Texture2D" uid="uid://blbqjf5cd6d04" path="res://bowie_mouth.png" id="6_o2b42"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aay13"]
 bg_color = Color(0.727839, 0.50246, 0.779444, 1)

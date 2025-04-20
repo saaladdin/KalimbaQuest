@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cas8ir3e05obh"]
 
-[ext_resource type="Script" uid="uid://duvyedk7u6ajo" path="res://kalimba_bits/IntroScene.cs" id="1_dd8yv"]
-[ext_resource type="Texture2D" uid="uid://dnacs08f3o1uw" path="res://kalimba_bits/intro_pic.png" id="2_rsfey"]
+[ext_resource type="Script" uid="uid://duvyedk7u6ajo" path="res://IntroScene.cs" id="1_dd8yv"]
+[ext_resource type="Texture2D" uid="uid://dnacs08f3o1uw" path="res://intro_pic.png" id="2_rsfey"]
 
 [node name="IntroScene" type="Control"]
 layout_mode = 3

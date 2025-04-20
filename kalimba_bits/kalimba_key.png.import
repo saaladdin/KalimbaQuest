@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3tjnishi6f8f"
-path="res://.godot/imported/kalimba_key.png-cd7a6571bfbcfec34dff9e393cc875f8.ctex"
+path="res://.godot/imported/kalimba_key.png-05f8175d6bf23fdded713383433173b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kalimba_bits/kalimba_key.png"
-dest_files=["res://.godot/imported/kalimba_key.png-cd7a6571bfbcfec34dff9e393cc875f8.ctex"]
+source_file="res://kalimba_key.png"
+dest_files=["res://.godot/imported/kalimba_key.png-05f8175d6bf23fdded713383433173b6.ctex"]
 
 [params]
 
