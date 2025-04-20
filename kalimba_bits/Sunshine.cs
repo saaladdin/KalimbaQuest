@@ -18,6 +18,10 @@ public partial class Sunshine : Control
 	private Sprite2D Bowie_Normal;
 	private Sprite2D Bowie_Sad;
 
+	// Victory Images (to mimic a GIF)
+	private Sprite2D VictoryImage1;
+	private Sprite2D VictoryImage2;
+
 	// Dialogue UI
 	private Label SpeakerLabel;
 	private Label DialogueLabel;
@@ -53,6 +57,15 @@ public partial class Sunshine : Control
 		Bowie_Normal = GetNode<Sprite2D>("Bowie_Normal");
 		Bowie_Sad = GetNode<Sprite2D>("Bowie_Sad");
 
+		// Get victory images
+		VictoryImage1 = GetNode<Sprite2D>("VictoryImage1");
+		VictoryImage2 = GetNode<Sprite2D>("VictoryImage2");
+
+		// Hide victory images initially
+		VictoryImage1.Visible = false;
+		VictoryImage2.Visible = false;
+
+		// Set initial visibility for cat faces
 		Sarah_Normal.Visible = true;
 		Sarah_Talk.Visible = false;
 		Sarah_Sad.Visible = false;
@@ -131,6 +144,10 @@ public partial class Sunshine : Control
 
 			if (currentNoteIndex >= tutorialNotes.Count)
 			{
+				// Show victory images
+				await ShowVictoryAnimation();
+
+				// Proceed to next steps after victory
 				Bowie_Normal.Visible = false;
 				await ShowDialogue("Sarah", "You did it!!! That was perfect!");
 				isPlayerTurn = false;
@@ -194,5 +211,34 @@ public partial class Sunshine : Control
 			Sarah_Talk.Visible = false;
 			Sarah_Normal.Visible = true;
 		}
+	}
+
+	private async Task ShowVictoryAnimation()
+	{
+		// Hide the dialogue panel during victory animation
+		DialogueLabel.Visible = false;
+		SpeakerLabel.Visible = false;
+
+		// Show victory image 1 first
+		VictoryImage1.Visible = true;
+		VictoryImage2.Visible = false;
+
+		// Alternate between the two victory images to mimic a GIF
+		for (int i = 0; i < 5; i++) // Repeat the animation for a few cycles
+		{
+			await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
+			VictoryImage1.Visible = false;
+			VictoryImage2.Visible = true;
+
+			await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
+			VictoryImage1.Visible = true;
+			VictoryImage2.Visible = false;
+		}
+
+		// Hide victory images and restore dialogue
+		VictoryImage1.Visible = false;
+		VictoryImage2.Visible = false;
+		DialogueLabel.Visible = true;
+		SpeakerLabel.Visible = true;
 	}
 }

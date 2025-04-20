@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://vcbbf1mvy56q"]
+[gd_scene load_steps=13 format=3 uid="uid://vcbbf1mvy56q"]
 
 [ext_resource type="Script" uid="uid://dj4lrft0cs3ck" path="res://Sunshine.cs" id="1_ccks2"]
 [ext_resource type="FontFile" uid="uid://cjvqit0qbpupw" path="res://Minecraft.ttf" id="2_eqesv"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://befeanqn58oak" path="res://PIXEL SARAH HEAD.png" id="6_6l02e"]
 [ext_resource type="Texture2D" uid="uid://beictjmbucwuo" path="res://kalimba_faces/bowieface.png" id="6_rb6vt"]
 [ext_resource type="Texture2D" uid="uid://c0ih0uami14sh" path="res://kalimba_faces/bowieface_sad.png" id="7_yhvdp"]
+[ext_resource type="Texture2D" uid="uid://bpsn67xgi3oko" path="res://victory1.png" id="9_ktffc"]
+[ext_resource type="Texture2D" uid="uid://y3sp3ept504r" path="res://victory2.png" id="10_6l02e"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m57dh"]
 bg_color = Color(0.814016, 0.469888, 0.666742, 1)
@@ -299,3 +301,13 @@ theme_override_fonts/font = ExtResource("2_eqesv")
 theme_override_font_sizes/font_size = 35
 text = "..."
 autowrap_mode = 2
+
+[node name="VictoryImage1" type="Sprite2D" parent="."]
+use_parent_material = true
+position = Vector2(960, 540)
+texture = ExtResource("9_ktffc")
+
+[node name="VictoryImage2" type="Sprite2D" parent="."]
+use_parent_material = true
+position = Vector2(960, 540)
+texture = ExtResource("10_6l02e")
