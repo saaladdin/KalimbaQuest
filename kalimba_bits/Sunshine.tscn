@@ -273,6 +273,7 @@ texture = ExtResource("6_6l02e")
 expand_mode = 1
 
 [node name="DialoguePanel" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 1182.0
 offset_top = 781.0
 offset_right = 1883.0

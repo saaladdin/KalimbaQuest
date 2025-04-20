@@ -1,15 +1,12 @@
-res://Kalimba.tscn
+res://Sunshine.tscn
+res://Sunshine.cs
 res://IntroScene.tscn
 res://DialogueScene.tscn
-res://DialogueScene.cs
-res://Kalimba.cs
-res://IntroScene.cs
-res://level_1.tscn
-res://bowierun.tscn
+res://Kalimba.tscn
+res://DialogueScene2.tscn
+res://StartScene.tscn
 res://DialogueScene2.cs
+res://Kalimba.cs
 res://StartScene.cs
-res://Control.cs
-res://kalimba sheet.json
-res://parse.tscn
-res://par.cs
-res://split.tscn
+res://IntroScene.cs
+res://DialogueScene.cs
