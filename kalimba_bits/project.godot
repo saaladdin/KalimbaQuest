@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Kalimba_Quest"
-run/main_scene="uid://cas8ir3e05obh"
+run/main_scene="uid://vcbbf1mvy56q"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 

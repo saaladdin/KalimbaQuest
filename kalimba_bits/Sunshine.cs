@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 public partial class Sunshine : Control
 {
 	private Dictionary<string, AudioStream> sounds = new();
-<<<<<<< HEAD
 	private List<string> tutorialNotes = new() { "G4", "C5", "D5", "E5", "E5" };
-=======
 
 	// Two sets of tutorial note sequences
 	private List<List<string>> tutorialNoteSequences = new()
@@ -18,7 +16,6 @@ public partial class Sunshine : Control
 	};
 
 	private int currentSequenceIndex = 0;
->>>>>>> 26270e576143362aa552901289c8fc00f91a031d
 	private int currentNoteIndex = 0;
 	private bool isPlayerTurn = false;
 
