@@ -15,26 +15,19 @@ public partial class Kalimba : Control
 	private Sprite2D Sarah_Talk;
 	private Sprite2D Sarah_Sad;
 
+	// Dialogue UI
+	private Label SpeakerLabel;
+	private Label DialogueLabel;
+
 	public override async void _Ready()
 	{
 		// Preload all the sounds
-		sounds["D6"] = GD.Load<AudioStream>("res://kalimba_sounds/D6.mp3");
-		sounds["B5"] = GD.Load<AudioStream>("res://kalimba_sounds/B5.mp3");
-		sounds["G5"] = GD.Load<AudioStream>("res://kalimba_sounds/G5.mp3");
-		sounds["E5"] = GD.Load<AudioStream>("res://kalimba_sounds/E5.mp3");
-		sounds["C5"] = GD.Load<AudioStream>("res://kalimba_sounds/C5.mp3");
-		sounds["A4"] = GD.Load<AudioStream>("res://kalimba_sounds/A4.mp3");
-		sounds["F4"] = GD.Load<AudioStream>("res://kalimba_sounds/F4.mp3");
-		sounds["D4"] = GD.Load<AudioStream>("res://kalimba_sounds/D4.mp3");
-		sounds["C4"] = GD.Load<AudioStream>("res://kalimba_sounds/C4.mp3");
-		sounds["E4"] = GD.Load<AudioStream>("res://kalimba_sounds/E4.mp3");
-		sounds["G4"] = GD.Load<AudioStream>("res://kalimba_sounds/G4.mp3");
-		sounds["B4"] = GD.Load<AudioStream>("res://kalimba_sounds/B4.mp3");
-		sounds["D5"] = GD.Load<AudioStream>("res://kalimba_sounds/D5.mp3");
-		sounds["F5"] = GD.Load<AudioStream>("res://kalimba_sounds/F5.mp3");
-		sounds["A5"] = GD.Load<AudioStream>("res://kalimba_sounds/A5.mp3");
-		sounds["C6"] = GD.Load<AudioStream>("res://kalimba_sounds/C6.mp3");
-		sounds["E6"] = GD.Load<AudioStream>("res://kalimba_sounds/E6.mp3");
+		foreach (string note in new[] {
+			"D6", "B5", "G5", "E5", "C5", "A4", "F4", "D4", "C4", "E4", "G4", "B4", "D5", "F5", "A5", "C6", "E6"
+		})
+		{
+			sounds[note] = GD.Load<AudioStream>($"res://kalimba_sounds/{note}.mp3");
+		}
 
 		// Hook up button presses
 		foreach (Node child in GetNode("KeysContainer").GetChildren())
@@ -49,25 +42,30 @@ public partial class Kalimba : Control
 			}
 		}
 
-		// Initialize cat face sprites
+		// Get cat faces
 		Sarah_Normal = GetNode<Sprite2D>("Sarah_Normal");
 		Sarah_Talk = GetNode<Sprite2D>("Sarah_Talk");
 		Sarah_Sad = GetNode<Sprite2D>("Sarah_Sad");
 
-		// Initially show the normal face
 		Sarah_Normal.Visible = true;
 		Sarah_Talk.Visible = false;
 		Sarah_Sad.Visible = false;
 
-		// Play tutorial notes
+		// Get dialogue labels
+		SpeakerLabel = GetNode<Label>("DialoguePanel/SpeakerLabel");
+		DialogueLabel = GetNode<Label>("DialoguePanel/DialogueLabel");
+
+		// Dialogue before tutorial
+		await ShowDialogue("Sarah", "Hi Queers!! I'm Sarah! Let me show you how to play a part of...");
+		await ShowDialogue("Sarah", "You are my Sunshine <3");
+		await ShowDialogue("Sarah", "Listen nowww!!");
+
 		await PlayTutorial();
 		isPlayerTurn = true;
-		GD.Print("🎵 Your turn! Repeat the melody.");
 	}
 
 	private async Task PlayTutorial()
 	{
-		GD.Print("👂 Listen to the melody...");
 		foreach (string note in tutorialNotes)
 		{
 			await HighlightAndPlay(note);
@@ -77,19 +75,14 @@ public partial class Kalimba : Control
 
 	private async Task HighlightAndPlay(string note)
 	{
-		// Play the sound
 		PlayNote(note);
 
-		// Try to find and "press" the button visually
 		var keyButton = GetNodeOrNull<Button>($"KeysContainer/{note}");
 		if (keyButton != null)
 		{
-			// Simulate press by changing modulate color
 			var originalColor = keyButton.Modulate;
-			keyButton.Modulate = new Color(1, 1, 0.5f); // yellow-ish
-
+			keyButton.Modulate = new Color(1, 1, 0.5f); // yellow highlight
 			await ToSignal(GetTree().CreateTimer(0.25f), "timeout");
-
 			keyButton.Modulate = originalColor;
 		}
 	}
@@ -115,7 +108,7 @@ public partial class Kalimba : Control
 		}
 	}
 
-	private void CheckPlayerInput(string note)
+	private async void CheckPlayerInput(string note)
 	{
 		if (note == tutorialNotes[currentNoteIndex])
 		{
@@ -124,34 +117,51 @@ public partial class Kalimba : Control
 
 			if (currentNoteIndex >= tutorialNotes.Count)
 			{
-				GD.Print("🎉 You played it perfectly!");
+				await ShowDialogue("Sarah", "You played it perfectly! YAY!! <3");
 				isPlayerTurn = false;
 			}
 		}
 		else
 		{
-			GD.Print($"❌ {note} was wrong! Starting over.");
-
-			// Show the sad face when the wrong note is played
+			await ShowDialogue("Sarah", $"NOO! {note} was wrong! Starting over nowww.");
 			ShowSadFace();
-
-			// Reset tutorial
 			currentNoteIndex = 0;
 		}
 	}
 
 	private async void ShowSadFace()
 	{
-		// Show the sad face
 		Sarah_Normal.Visible = false;
 		Sarah_Talk.Visible = false;
 		Sarah_Sad.Visible = true;
 
-		// Wait for a short time (e.g., 1 second)
 		await ToSignal(GetTree().CreateTimer(1.0f), "timeout");
 
-		// After the delay, show the normal face again
 		Sarah_Sad.Visible = false;
+		Sarah_Normal.Visible = true;
+	}
+
+	private async Task ShowDialogue(string speaker, string text)
+	{
+		SpeakerLabel.Text = speaker;
+		DialogueLabel.Text = "";
+
+		// Show talking face
+		Sarah_Normal.Visible = false;
+		Sarah_Sad.Visible = false;
+		Sarah_Talk.Visible = true;
+
+		// Optional typewriter effect
+		foreach (char c in text)
+		{
+			DialogueLabel.Text += c;
+			await ToSignal(GetTree().CreateTimer(0.03f), "timeout");
+		}
+
+		await ToSignal(GetTree().CreateTimer(1.5f), "timeout");
+
+		// Return to normal face
+		Sarah_Talk.Visible = false;
 		Sarah_Normal.Visible = true;
 	}
 }
