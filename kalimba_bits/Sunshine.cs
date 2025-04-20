@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 public partial class Sunshine : Control
 {
 	private Dictionary<string, AudioStream> sounds = new();
-	private List<string> tutorialNotes = new() {
-		"G4",
-		"C5",
-		"D5",
-		"E5",
-		"E5" };
+
+	// Two sets of tutorial note sequences
+	private List<List<string>> tutorialNoteSequences = new()
+	{
+		new List<string> { "G4", "C5", "D5", "E5", "E5" },
+		new List<string> { "E5", "D5", "E5", "C5", "E4", "G4" }
+	};
+
+	private int currentSequenceIndex = 0;
 	private int currentNoteIndex = 0;
 	private bool isPlayerTurn = false;
 
@@ -23,7 +26,7 @@ public partial class Sunshine : Control
 	private Sprite2D Bowie_Normal;
 	private Sprite2D Bowie_Sad;
 
-	// Victory Images (to mimic a GIF)
+	// Victory Images
 	private Sprite2D VictoryImage1;
 	private Sprite2D VictoryImage2;
 
@@ -33,7 +36,7 @@ public partial class Sunshine : Control
 
 	public override async void _Ready()
 	{
-		// Preload all the sounds
+		// Load all kalimba notes
 		foreach (string note in new[] {
 			"D6", "B5", "G5", "E5", "C5", "A4", "F4", "D4", "C4", "E4", "G4", "B4", "D5", "F5", "A5", "C6", "E6"
 		})
@@ -41,7 +44,7 @@ public partial class Sunshine : Control
 			sounds[note] = GD.Load<AudioStream>($"res://kalimba_sounds/{note}.mp3");
 		}
 
-		// Hook up button presses
+		// Connect keys
 		foreach (Node child in GetNode("KeysContainer").GetChildren())
 		{
 			if (child is Button button)
@@ -54,7 +57,7 @@ public partial class Sunshine : Control
 			}
 		}
 
-		// Get cat faces
+		// Get sprites and UI elements
 		Sarah_Normal = GetNode<Sprite2D>("Sarah_Normal");
 		Sarah_Talk = GetNode<Sprite2D>("Sarah_Talk");
 		Sarah_Sad = GetNode<Sprite2D>("Sarah_Sad");
@@ -62,15 +65,16 @@ public partial class Sunshine : Control
 		Bowie_Normal = GetNode<Sprite2D>("Bowie_Normal");
 		Bowie_Sad = GetNode<Sprite2D>("Bowie_Sad");
 
-		// Get victory images
 		VictoryImage1 = GetNode<Sprite2D>("VictoryImage1");
 		VictoryImage2 = GetNode<Sprite2D>("VictoryImage2");
 
-		// Hide victory images initially
+		SpeakerLabel = GetNode<Label>("DialoguePanel/SpeakerLabel");
+		DialogueLabel = GetNode<Label>("DialoguePanel/DialogueLabel");
+
+		// Initial UI state
 		VictoryImage1.Visible = false;
 		VictoryImage2.Visible = false;
 
-		// Set initial visibility for cat faces
 		Sarah_Normal.Visible = true;
 		Sarah_Talk.Visible = false;
 		Sarah_Sad.Visible = false;
@@ -78,11 +82,7 @@ public partial class Sunshine : Control
 		Bowie_Normal.Visible = false;
 		Bowie_Sad.Visible = false;
 
-		// Get dialogue labels
-		SpeakerLabel = GetNode<Label>("DialoguePanel/SpeakerLabel");
-		DialogueLabel = GetNode<Label>("DialoguePanel/DialogueLabel");
-
-		// Dialogue before tutorial
+		// Run intro dialogue + tutorial
 		await ShowDialogue("Sarah", "Hello againnnn! You will play...");
 		await ShowDialogue("Sarah", "You are my Sunshine <3");
 		await ShowDialogue("Sarah", "Listen to this!!");
@@ -90,7 +90,7 @@ public partial class Sunshine : Control
 		await PlayTutorial();
 		await ShowDialogue("Sarah", "Bowie you got this!");
 
-		// Player's turn starts
+		// Bowie plays first sequence
 		isPlayerTurn = true;
 		Sarah_Normal.Visible = false;
 		Bowie_Normal.Visible = true;
@@ -99,7 +99,8 @@ public partial class Sunshine : Control
 
 	private async Task PlayTutorial()
 	{
-		foreach (string note in tutorialNotes)
+		var sequence = tutorialNoteSequences[currentSequenceIndex];
+		foreach (string note in sequence)
 		{
 			await HighlightAndPlay(note);
 			await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
@@ -114,7 +115,7 @@ public partial class Sunshine : Control
 		if (keyButton != null)
 		{
 			var originalColor = keyButton.Modulate;
-			keyButton.Modulate = new Color(1, 1, 0.5f); // yellow highlight
+			keyButton.Modulate = new Color(1, 1, 0.5f); // highlight
 			await ToSignal(GetTree().CreateTimer(0.25f), "timeout");
 			keyButton.Modulate = originalColor;
 		}
@@ -143,26 +144,44 @@ public partial class Sunshine : Control
 
 	private async void CheckPlayerInput(string note)
 	{
-		if (note == tutorialNotes[currentNoteIndex])
+		var currentSequence = tutorialNoteSequences[currentSequenceIndex];
+
+		if (note == currentSequence[currentNoteIndex])
 		{
 			currentNoteIndex++;
 
-			if (currentNoteIndex >= tutorialNotes.Count)
+			if (currentNoteIndex >= currentSequence.Count)
 			{
-				// Show victory images
-				await ShowVictoryAnimation();
+				currentNoteIndex = 0;
+				currentSequenceIndex++;
 
-				// Proceed to next steps after victory
-				Bowie_Normal.Visible = false;
-				await ShowDialogue("Sarah", "You did it!!! That was perfect!");
 				isPlayerTurn = false;
-				await ShowDialogue("Sarah", "Let's keep goingggg!");
-				GetTree().ChangeSceneToFile("res://StartScene.tscn"); // or next scene
+				Bowie_Normal.Visible = false;
+
+				if (currentSequenceIndex < tutorialNoteSequences.Count)
+				{
+					// Move to next part of the melody
+					await ShowDialogue("Sarah", "That was beautiful!");
+					await ShowDialogue("Sarah", "Now listen to this one!");
+					await PlayTutorial();
+
+					isPlayerTurn = true;
+					Bowie_Normal.Visible = true;
+					await ShowDialogue("Bowie", "I'm ready!");
+				}
+				else
+				{
+					// Player finished all sequences
+					await ShowVictoryAnimation();
+					await ShowDialogue("Sarah", "You did it!!! That was perfect!");
+					await ShowDialogue("Sarah", "Let's keep goingggg!");
+					GetTree().ChangeSceneToFile("res://StartScene.tscn");
+				}
 			}
 		}
 		else
 		{
-			// Wrong note logic
+			// Wrong note
 			Bowie_Normal.Visible = false;
 			Bowie_Sad.Visible = true;
 
@@ -171,7 +190,6 @@ public partial class Sunshine : Control
 
 			Bowie_Sad.Visible = false;
 			Bowie_Normal.Visible = true;
-
 			currentNoteIndex = 0;
 		}
 	}
@@ -181,7 +199,6 @@ public partial class Sunshine : Control
 		SpeakerLabel.Text = speaker;
 		DialogueLabel.Text = "";
 
-		// Show correct talking face
 		if (speaker == "Sarah")
 		{
 			Sarah_Normal.Visible = false;
@@ -201,7 +218,6 @@ public partial class Sunshine : Control
 			Sarah_Sad.Visible = false;
 		}
 
-		// Typewriter effect
 		foreach (char c in text)
 		{
 			DialogueLabel.Text += c;
@@ -210,7 +226,6 @@ public partial class Sunshine : Control
 
 		await ToSignal(GetTree().CreateTimer(1.5f), "timeout");
 
-		// Reset faces after speaking
 		if (speaker == "Sarah")
 		{
 			Sarah_Talk.Visible = false;
@@ -220,16 +235,13 @@ public partial class Sunshine : Control
 
 	private async Task ShowVictoryAnimation()
 	{
-		// Hide the dialogue panel during victory animation
 		DialogueLabel.Visible = false;
 		SpeakerLabel.Visible = false;
 
-		// Show victory image 1 first
 		VictoryImage1.Visible = true;
 		VictoryImage2.Visible = false;
 
-		// Alternate between the two victory images to mimic a GIF
-		for (int i = 0; i < 5; i++) // Repeat the animation for a few cycles
+		for (int i = 0; i < 5; i++)
 		{
 			await ToSignal(GetTree().CreateTimer(0.5f), "timeout");
 			VictoryImage1.Visible = false;
@@ -240,7 +252,6 @@ public partial class Sunshine : Control
 			VictoryImage2.Visible = false;
 		}
 
-		// Hide victory images and restore dialogue
 		VictoryImage1.Visible = false;
 		VictoryImage2.Visible = false;
 		DialogueLabel.Visible = true;
