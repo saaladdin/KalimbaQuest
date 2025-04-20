@@ -1,0 +1,17 @@
+/Users/bowielee/kalimba_quest/.godot/mono/temp/bin/Debug/Kalimba_Quest.deps.json
+/Users/bowielee/kalimba_quest/.godot/mono/temp/bin/Debug/Kalimba_Quest.runtimeconfig.json
+/Users/bowielee/kalimba_quest/.godot/mono/temp/bin/Debug/Kalimba_Quest.dll
+/Users/bowielee/kalimba_quest/.godot/mono/temp/bin/Debug/Kalimba_Quest.pdb
+/Users/bowielee/kalimba_quest/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/Users/bowielee/kalimba_quest/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.csproj.AssemblyReference.cache
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.AssemblyInfoInputs.cache
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.AssemblyInfo.cs
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.csproj.CoreCompileInputs.cache
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_.47953541.Up2Date
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.dll
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/refint/Kalimba_Quest.dll
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.pdb
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/Kalimba_Quest.genruntimeconfig.cache
+/Users/bowielee/kalimba_quest/.godot/mono/temp/obj/Debug/ref/Kalimba_Quest.dll
