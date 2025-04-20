@@ -52,7 +52,7 @@ public partial class StartScene : Control
 
 	private void GoToGame()
 	{
-		GetTree().ChangeSceneToFile("res://DialogueScene.tscn");
+		GetTree().ChangeSceneToFile("res://Sunshine.tscn");
 	}
 
 	private void GoToOption()
